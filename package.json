@@ -1,0 +1,23 @@
+{
+  "name": "typescriptDemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-connect": "^2.2.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-inject": "^1.2.0",
+    "gulp-rimraf": "^0.1.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-tsc": "^0.9.4",
+    "gulp-tslint": "^1.4.4",
+    "gulp-typescript": "^2.7.0",
+    "typescript": "^1.5.0-beta"
+  }
+}

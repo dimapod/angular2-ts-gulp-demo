@@ -1,0 +1,16 @@
+<p>My name: {{ myName }}</p>
+<p>Current time: {{ time }}</p>
+
+<input type="text" placeholder="Write something here" autofocus #newfriend (keyup)="addFriend($event,newfriend.value)"/>
+
+<button (click)="addFriend($event,newfriend.value)">Add new friend</button>
+
+<p>Friends <span *if="friendsStore.names.length > 3">(You have many friends!)</span>:</p>
+<ul>
+  <li *for="#name of friendsStore.names">
+    <a href="#" (click)="removeFriend(name)">x</a>
+    {{ name }}
+  </li>
+</ul>
+
+
