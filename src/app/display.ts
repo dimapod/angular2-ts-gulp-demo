@@ -40,7 +40,7 @@ class DisplayComponent {
 
     addFriend($event, newFriend) {
         if ($event.which === 13 || $event instanceof MouseEvent) {
-            this.friendsStore.addFriend(newFriend);
+            this.friendsStore.addFriend(newFriend.value);
             newFriend.value = '';
         }
     }

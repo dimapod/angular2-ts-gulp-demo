@@ -1,9 +1,9 @@
 <p>My name: {{ myName }}</p>
 <p>Current time: {{ time }}</p>
 
-<input type="text" placeholder="Write something here" autofocus #newfriend (keyup)="addFriend($event,newfriend.value)"/>
+<input type="text" placeholder="Write something here" autofocus #newfriend (keyup)="addFriend($event,newfriend)"/>
 
-<button (click)="addFriend($event,newfriend.value)">Add new friend</button>
+<button (click)="addFriend($event,newfriend)">Add new friend</button>
 
 <p>Friends <span *if="friendsStore.names.length > 3">(You have many friends!)</span>:</p>
 <ul>

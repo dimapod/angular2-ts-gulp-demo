@@ -15,8 +15,8 @@ var config = new Config();
 var connectInit = function (livereload, port) {
   require('gulp-connect').server({
     port: 9999,
-    root: 'dist'
-    //livereload: livereload
+    root: 'dist',
+    livereload: livereload
   });
 };
 
@@ -83,4 +83,3 @@ gulp.task('build', ['ts-lint', 'copy-static', 'compile-ts', 'gen-ts-refs']);
 gulp.task('serve', ['watch'], function () {
   connectInit(true, 3000);
 });
-
