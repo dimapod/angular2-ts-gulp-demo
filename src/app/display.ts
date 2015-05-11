@@ -2,6 +2,7 @@
 
 import {Component, View, bootstrap, For, If} from 'angular2/angular2';
 import {FriendsStore} from 'friends-store';
+import {FriendComponent} from 'friend';
 
 @Component({
     selector: 'display',
@@ -9,7 +10,7 @@ import {FriendsStore} from 'friends-store';
 })
 @View({
     templateUrl: 'display.tpl.html',
-    directives: [For, If]
+    directives: [For, If, FriendComponent]
 })
 class DisplayComponent {
     myName:string;
@@ -18,7 +19,7 @@ class DisplayComponent {
     friendsStore:FriendsStore;
 
     constructor(friendsStore:FriendsStore) {
-        this.myName = 'Alice';
+        this.myName = 'Alice1';
         this.friendsStore = friendsStore;
         this.initTimer();
     }
@@ -51,4 +52,6 @@ class DisplayComponent {
     }
 }
 
+// You instantiate an Angular application by explicitly specifying a component to use as the root component
+// for your application via the bootstrap() method.
 bootstrap(DisplayComponent);
